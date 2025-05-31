@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="hr">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<title>PatikaZona.hr - Najbolje Nike patike</title>
+<style>
+  body { font-family: Arial, sans-serif; margin:0; background:#f9f9f9; color:#333; }
+  header { position: relative; height: 70vh; overflow: hidden; }
+  header video { width: 100%; height: 100%; object-fit: cover; filter: brightness(0.7); }
+  header .overlay { position: absolute; top:0; left:0; width:100%; height:100%; display:flex; justify-content:center; align-items:center; color:#fff; flex-direction: column; }
+  header h1 { font-size: 3.5rem; margin:0; text-shadow: 0 0 15px rgba(0,0,0,0.7); }
+  header p { font-size: 1.3rem; margin-top:10px; }
+  nav { background:#111; padding:10px 20px; display:flex; justify-content: space-between; align-items: center; }
+  nav .logo { color:#fff; font-weight: bold; font-size: 1.5rem; letter-spacing: 2px; }
+  nav ul { list-style:none; margin:0; padding:0; display:flex; }
+  nav ul li { margin-left: 25px; }
+  nav ul li a { color:#fff; text-decoration:none; font-weight: 600; transition: color 0.3s; }
+  nav ul li a:hover { color:#f04e23; }
+  main { max-width: 1200px; margin: 40px auto; padding: 0 20px; }
+  .products { display: grid; grid-template-columns: repeat(auto-fit, minmax(250px, 1fr)); gap: 30px; }
+  .product { background:#fff; border-radius: 8px; box-shadow: 0 2px 10px rgba(0,0,0,0.1); overflow: hidden; transition: transform 0.3s ease; }
+  .product:hover { transform: translateY(-10px); }
+  .product img { width: 100%; display: block; }
+  .product-info { padding: 15px; }
+  .product-info h3 { margin: 0 0 10px; font-size: 1.2rem; }
+  .product-info p { margin: 0 0 15px; color: #666; }
+  .product-info button { background: #f04e23; border: none; color: #fff; padding: 10px 15px; border-radius: 4px; cursor: pointer; font-weight: 600; transition: background 0.3s ease; }
+  .product-info button:hover { background: #d64217; }
+  footer { background: #111; color:#aaa; text-align: center; padding: 20px; margin-top: 60px; font-size: 0.9rem; }
+  .contact-form { max-width: 400px; margin: 40px auto; }
+  .contact-form h2 { text-align: center; margin-bottom: 20px; }
+  .contact-form input, .contact-form textarea { width: 100%; padding: 10px; margin-bottom: 15px; border-radius: 4px; border: 1px solid #ccc; font-size: 1rem; }
+  .contact-form button { width: 100%; background: #f04e23; color: #fff; border: none; padding: 12px; font-size: 1rem; cursor: pointer; border-radius: 4px; }
+  .contact-form button:hover { background: #d64217; }
+</style>
+</head>
+<body>
+
+<nav>
+  <div class="logo">PatikaZona.hr</div>
+  <ul>
+    <li><a href="#products">Trgovina</a></li>
+    <li><a href="#contact">Kontakt</a></li>
+  </ul>
+</nav>
+
+<header>
+  <video autoplay muted loop playsinline>
+    <source src="https://cdn.videvo.net/videvo_files/video/free/2017-03/small_watermarked/170215_02_Basketball_4k_003_preview.webm" type="video/webm" />
+    <source src="https://cdn.videvo.net/videvo_files/video/free/2017-03/small_watermarked/170215_02_Basketball_4k_003_preview.mp4" type="video/mp4" />
+    Tvoj preglednik ne podržava video.
+  </video>
+  <div class="overlay">
+    <h1>PatikaZona.hr</h1>
+    <p>Najbolje Nike patike po sjajnim cijenama</p>
+  </div>
+</header>
+
+<main>
+  <section id="products">
+    <h2 style="text-align:center; margin-bottom: 30px;">Naši Top Modeli Nike Patika</h2>
+    <div class="products">
+      <div class="product">
+        <img src="https://static.nike.com/a/images/t_PDP_1728_v1/f_auto,q_auto:eco/0d1a1fa8-2b88-4e25-849b-3d07d1832c07/air-max-270-muškarci-cipela-PBhxHk.png" alt="Nike Air Max 270" />
+        <div class="product-info">
+          <h3>Nike Air Max 270</h3>
+          <p>Moderan dizajn, udobnost i stil.</p>
+          <button>Dodaj u košaricu</button>
+        </div>
+      </div>
+      <div class="product">
+        <img src="https://static.nike.com/a/images/t_PDP_1728_v1/f_auto,q_auto:eco/04d4e491-1c12-423c-b26b-948afedc1e74/air-zoom-pegasus-38-muškarci-cipela-Q4JDZZ.png" alt="Nike Air Zoom Pegasus 38" />
+        <div class="product-info">
+          <h3>Nike Air Zoom Pegasus 38</h3>
+          <p>Izdržljive i lagane patike za trčanje.</p>
+          <button>Dodaj u košaricu</button>
+        </div>
+      </div>
+      <div class="product">
+        <img src="https://static.nike.com/a/images/t_PDP_1728_v1/f_auto,q_auto:eco/1b29d0e7-9ed1-4e2d-b194-76e87c1d5767/air-force-1-07-muškarci-cipela-JDJf9J.png" alt="Nike Air Force 1 '07" />
+        <div class="product-info">
+          <h3>Nike Air Force 1 '07</h3>
+          <p>Klasik s prepoznatljivim stilom i udobnošću.</p>
+          <button>Dodaj u košaricu</button>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section id="contact" class="contact-form">
+    <h2>Kontaktirajte nas</h2>
+    <form onsubmit="alert('Hvala na poruci! Kontaktirat ćemo vas uskoro.'); return false;">
+      <input type="text" name="name" placeholder="Vaše ime" required />
+      <input type="email" name="email" placeholder="Vaš email" required />
+      <textarea name="message" rows="4" placeholder="Vaša poruka" required></textarea>
+      <button type="submit">Pošalji</button>
+    </form>
+  </section>
+</main>
+
+<footer>
+  &copy; 2025 PatikaZona.hr - Sva prava pridržana
+</footer>
+
+</body>
+</html>
